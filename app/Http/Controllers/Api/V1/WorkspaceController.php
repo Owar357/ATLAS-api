@@ -43,7 +43,7 @@ class WorkspaceController extends Controller
         $workspace = $this->service->update((int) $id, $request->validated());
 
         return response()->json([
-            'message' => 'Workspace actualizado correctamente',
+            'message' => 'Workspace has been update sucessfully',
             'data' => new WorkspaceResource($workspace)], 200);
     }
 
